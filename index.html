@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Matrix</title>
+</head>
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<body style="text-align: center;">
+
+    <!-- First Matrix -->
+    <h1>First Matrix</h1>
+
+    <!-- First Three Inputs -->
+    <input type="number" id="value1" style="width: 50px;">
+    <input type="number" id="value2" style="width: 50px;">
+    <input type="number" id="value3" style="width: 50px;">
+    <br>
+    <br>
+    <!-- Second Three Inputs -->
+    <input type="number" id="value4" style="width: 50px;">
+    <input type="number" id="value5" style="width: 50px;">
+    <input type="number" id="value6" style="width: 50px;">
+    <br>
+    <br>
+    <!-- Third Three Inputs -->
+    <input type="number" id="value7" style="width: 50px;">
+    <input type="number" id="value8" style="width: 50px;">
+    <input type="number" id="value9" style="width: 50px;">
+
+    <!-- Second Matrix -->
+    <h1>Second Matrix</h1>
+
+    <!-- First Three Inputs -->
+    <input type="number" id="value10" style="width: 50px;">
+    <input type="number" id="value11" style="width: 50px;">
+    <input type="number" id="value12" style="width: 50px;">
+    <br>
+    <br>
+    <!-- Second Three Inputs -->
+    <input type="number" id="value13" style="width: 50px;">
+    <input type="number" id="value14" style="width: 50px;">
+    <input type="number" id="value15" style="width: 50px;">
+    <br>
+    <br>
+
+
+    <!-- Third Three Inputs -->
+    <input type="number" id="value16" style="width: 50px;">
+    <input type="number" id="value17" style="width: 50px;">
+    <input type="number" id="value18" style="width: 50px;">
+
+    <!-- Output Matrix -->
+    <h1>Output Matrix</h1>
+
+    <!-- First Three Inputs -->
+    <!-- <textarea id="result1" style="width: 50px;"></textarea> -->
+    <input type="number" id="result1" style="width: 50px;">
+    <input type="number" id="result2" style="width: 50px;">
+    <input type="number" id="result3" style="width: 50px;">
+    <br>
+    <br>
+    <!-- Second Three Inputs -->
+    <input type="number" id="result4" style="width: 50px;">
+    <input type="number" id="result5" style="width: 50px;">
+    <input type="number" id="result6" style="width: 50px;">
+    <br>
+    <br>
+    <!-- Third Three Inputs -->
+    <input type="number" id="result7" style="width: 50px;">
+    <input type="number" id="result8" style="width: 50px;">
+    <input type="number" id="result9" style="width: 50px;">
+
+    <br>
+    <br>
+    <button onclick=" myfunction()">Calculate</button>
+    <script>
+        function myfunction() {
+            // First Matrix values
+            let value1 = document.getElementById("value1").value;
+            let value2 = document.getElementById("value2").value;
+            let value3 = document.getElementById("value3").value;
+            let value4 = document.getElementById("value4").value;
+            let value5 = document.getElementById("value5").value;
+            let value6 = document.getElementById("value6").value;
+            let value7 = document.getElementById("value7").value;
+            let value8 = document.getElementById("value8").value;
+            let value9 = document.getElementById("value9").value;
+
+            // Second Matrix
+            let value10 = document.getElementById("value10").value;
+            let value11 = document.getElementById("value11").value;
+            let value12 = document.getElementById("value12").value;
+            let value13 = document.getElementById("value13").value;
+            let value14 = document.getElementById("value14").value;
+            let value15 = document.getElementById("value15").value;
+            let value16 = document.getElementById("value16").value;
+            let value17 = document.getElementById("value17").value;
+            let value18 = document.getElementById("value18").value;
+
+            // Calculation
+
+            let result1 = Number(value1) + Number(value10);
+
+            document.getElementById('result1').value = result1;
+
+            let result2 = Number(value2) + Number(value11);
+
+            document.getElementById('result2').value = result2;
+
+            let result3 = Number(value3) + Number(value12);
+
+            document.getElementById('result3').value = result3;
+
+            let result4 = Number(value4) + Number(value13);
+
+            document.getElementById('result4').value = result4;
+
+            let result5 = Number(value5) + Number(value14);
+
+            document.getElementById('result5').value = result5;
+
+            let result6 = Number(value6) + Number(value15);
+
+            document.getElementById('result6').value = result6;
+
+            let result7 = Number(value7) + Number(value16);
+
+            document.getElementById('result7').value = result7;
+
+            let result8 = Number(value8) + Number(value17);
+
+            document.getElementById('result8').value = result8;
+
+            let result9 = Number(value9) + Number(value18);
+
+            document.getElementById('result9').value = result9;
+
+
+            // let result = Number(num1) + Number(num2);
+            // console.log("result: ", result);
+
+        }
+    </script>
+
+</html>
